@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 *{
-    background-color: rgb(23, 22, 22);
-    color: aliceblue;
+    /* background-color: rgb(23, 22, 22);
+    color: aliceblue; */
 
 }
