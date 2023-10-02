@@ -4,6 +4,6 @@
   margin: 0; 
 }
 *::-webkit-scrollbar{
-width: 5px;
+width: 0px;
     }
 
