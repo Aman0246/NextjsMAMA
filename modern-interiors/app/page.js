@@ -7,20 +7,40 @@ import { motion } from "framer-motion";
 import AboutUs from "@/comonents/AboutUs";
 import Services from "@/comonents/Services";
 import MainPage from "@/comonents/MainPage";
+import Contactus from "@/comonents/Contactus";
+import Maps from "@/comonents/Maps";
+import axios from "axios";
+import Link from "next/link";
 
 export default function Hero() {
-  const herosection =useRef(null)
-  const serviceSection =useRef(null)
-  const aboutus =useRef(null)
+  let a = process.env.GOOGLE_MAP_API;
+  const herosection = useRef(null);
+  const serviceSection = useRef(null);
+  const aboutus = useRef(null);
+  // const WhyusSection =useRef(null)
+  const ContactusSection = useRef(null);
+  const maps = useRef(null);
+
   const ScrolltoHero = () => {
-    herosection.current?.scrollIntoView({behavior: 'smooth'})
+    herosection.current?.scrollIntoView({ behavior: "smooth" });
   };
   const ScrolltoServices = () => {
-    serviceSection.current?.scrollIntoView({behavior: 'smooth'})
+    serviceSection.current?.scrollIntoView({ behavior: "smooth" });
   };
   const ScrolltoAboutUs = () => {
-    aboutus.current?.scrollIntoView({behavior: 'smooth'})
+    aboutus.current?.scrollIntoView({ behavior: "smooth" });
   };
+  // const whyusClick = () => {
+  //   WhyusSection.current?.scrollIntoView({behavior: 'smooth'})
+  // };
+  const ContactUS = () => {
+    ContactusSection.current?.scrollIntoView({ behavior: "smooth" });
+  };
+  const scrolltomaps = () => {
+    ContactusSection.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const projectvideo = () => {};
 
   const [Openmodel, setOpenmodel] = useState(false);
   useEffect(() => {
@@ -41,8 +61,8 @@ export default function Hero() {
           transition={{ duration: 1, delay: 1 }}
           style={{
             // backgroundColor: "#242931",
-            backgroundColor:'transparent',
-            backdropFilter:" blur(6px)",
+            backgroundColor: "transparent",
+            backdropFilter: " blur(6px)",
             display: "flex",
             width: "100vw",
             paddingLeft: "5rem",
@@ -72,42 +92,95 @@ export default function Hero() {
           >
             <div
               onClick={ScrolltoHero}
-              style={{ cursor: "pointer", paddingRight: "20px" }}
+              className="hover"
+              style={{
+                cursor: "pointer",
+                paddingRight: "20px",
+                fontWeight: "bold",
+              }}
             >
               HOME
             </div>
-            <div onClick={ScrolltoAboutUs} style={{ cursor: "pointer", paddingRight: "20px" }}>
+            <div
+              className="hover"
+              onClick={ScrolltoAboutUs}
+              style={{
+                cursor: "pointer",
+                paddingRight: "20px",
+                fontWeight: "bold",
+              }}
+            >
               ABOUT US
             </div>
-            <div onClick={ScrolltoServices} style={{ cursor: "pointer", paddingRight: "20px" }}>
+            <div
+              className="hover"
+              onClick={ScrolltoServices}
+              style={{
+                cursor: "pointer",
+                paddingRight: "20px",
+                fontWeight: "bold",
+              }}
+            >
               SERVICES
             </div>
-            <div style={{ cursor: "pointer", paddingRight: "20px" }}>
+            {/* <div className="hover" onClick={whyusClick}  style={{ cursor: "pointer", paddingRight: "20px" }}>
               WHY US
-            </div>
-            <div style={{ cursor: "pointer", paddingRight: "20px" }}>
-              GALLERY
-            </div>
-            <div style={{ cursor: "pointer", paddingRight: "20px" }}>
+            </div> */}
+            <Link href="/video">
+              <div
+                className="hover"
+                style={{ cursor: "pointer", paddingRight: "20px",fontWeight:'bold' }}
+              >
+                PROJECT VIDEO
+              </div>
+            </Link>
+            <div
+              onClick={ContactUS}
+              className="hover"
+              style={{
+                cursor: "pointer",
+                paddingRight: "20px",
+                fontWeight: "bold",
+              }}
+            >
               CONTACT US
             </div>
-            <div style={{ cursor: "pointer" }}>MAP</div>
+            <div
+              onClick={scrolltomaps}
+              className="hover"
+              style={{ cursor: "pointer", fontWeight: "bold" }}
+            >
+              MAP
+            </div>
           </div>
         </motion.header>
       </div>
       <div ref={herosection}>
-        <MainPage
-          Openmodel={Openmodel}
-          setOpenmodel={setOpenmodel}
-        />
+        <MainPage Openmodel={Openmodel} setOpenmodel={setOpenmodel} />
       </div>
-      <div ref={aboutus} className="mt-20">
+      <div ref={aboutus} className=" mt-36">
         <AboutUs />
       </div>
 
-      <div ref={serviceSection} className=" mt-32"  >
+      <div ref={serviceSection} style={{ marginTop: "1rem" }}>
         <Services />
       </div>
+
+      {/* <div ref={WhyusSection} style={{marginTop:'8rem'}}>
+       <Whyus/>
+       </div> */}
+
+      <div ref={ContactusSection} style={{ marginTop: "1rem" }}>
+        <Contactus />
+      </div>
+
+      <div ref={maps} style={{ marginTop: "1rem" }}>
+        <Maps />
+      </div>
+
+      {/* <div style={{marginTop:'1rem'}}>
+       <Video/>
+       </div> */}
     </div>
   );
 }

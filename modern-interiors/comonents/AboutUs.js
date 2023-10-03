@@ -9,13 +9,13 @@ export default function AboutUs() {
         style={{ paddingLeft: "5rem", display: "flex", paddingRight: "5rem" }}
       >
         {/* viewport={{once}} apply for once animation */}
-        <motion.div initial={{opacity:0 ,scale:0}} whileInView={{opacity:1,scale:1}} transition={{duration:0.6}} style={{ flex: 1 }}>
+        <motion.div viewport={{once:true}} initial={{opacity:0 ,scale:0}} whileInView={{opacity:1,scale:1}} transition={{duration:0.6}} style={{ flex: 1 }}>
           <Image
             src={Aboutus}
             style={{ width: "80%", height: "25rem", borderRadius: "30px" }}
           ></Image>
         </motion.div>
-        <motion.div initial={{opacity:0,scale:0,x:100}} whileInView={{opacity:1,scale:1,x:0}} transition={{duration:0.6}}
+        <motion.div viewport={{once:true}} initial={{opacity:0,scale:0,x:100}} whileInView={{opacity:1,scale:1,x:0}} transition={{duration:0.6}}
           style={{
             flex: 1,
             height: "25rem",

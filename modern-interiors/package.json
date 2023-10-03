@@ -11,8 +11,11 @@
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.14.11",
     "@mui/material": "^5.14.11",
+    "axios": "^1.5.1",
     "framer-motion": "^10.16.4",
+    "google-map-react": "^2.2.1",
     "next": "latest",
     "react": "latest",
     "react-countup": "^6.4.2",
