@@ -5,7 +5,7 @@ import Typography from "@mui/material/Typography";
 import { Button, Card, CardActionArea, CardActions } from "@mui/material";
 import SImageOne from "../servicesImage/aboutus.jpg";
 import SImageTwo from "../servicesImage/architectural-cad-500x500.webp";
-import SImageThree from "../servicesImage/douglas-sheppard-9rYfG8sWRVo-unsplash.jpg";
+// import SImageThree from "../servicesImage/douglas-sheppard-9rYfG8sWRVo-unsplash.jpg";
 import SImageFour from "../servicesImage/hq720.jpg";
 import SImageFive from "../servicesImage/IMG-7752_1200x1200.webp";
 import SImageSix from "../servicesImage/product-jpeg-500x500.webp";
@@ -37,7 +37,7 @@ export default function Services() {
       >
         <div>
         
-          <Card sx={{ maxWidth: 345,minHeight:420 , backgroundColor:'#383636',color:'white'}}>
+          <Card sx={{ maxWidth: 345,minHeight:380 , backgroundColor:'#383636',color:'white'}}>
             <CardActionArea>
               <Image style={{height:'14rem'}} src={SImageEigth} />
               <CardContent>
@@ -49,17 +49,17 @@ export default function Services() {
                 </Typography>
               </CardContent>
             </CardActionArea>
-            <CardActions>
+            {/* <CardActions>
               <Button size="small" color="primary">
                 Share
               </Button>
-            </CardActions>
+            </CardActions> */}
           </Card>
         </div>
 
         <div>
         
-          <Card sx={{ maxWidth: 345,minHeight:420 , backgroundColor:'#383636',color:'white'}}>
+          <Card sx={{ maxWidth: 345,minHeight:380 , backgroundColor:'#383636',color:'white'}}>
             <CardActionArea>
               <Image style={{height:'14rem'}} src={SImageTwo} />
               <CardContent>
@@ -71,17 +71,17 @@ export default function Services() {
                 </Typography>
               </CardContent>
             </CardActionArea>
-            <CardActions>
+            {/* <CardActions>
               <Button size="small" color="primary">
                 Share
               </Button>
-            </CardActions>
+            </CardActions> */}
           </Card>
         </div>
 
         <div>
         
-          <Card sx={{ maxWidth: 345,minHeight:420 , backgroundColor:'#383636',color:'white'}}>
+          <Card sx={{ maxWidth: 345,minHeight:380 , backgroundColor:'#383636',color:'white'}}>
             <CardActionArea>
               <img style={{height:'14rem',width:'100%'}} src="https://image3.jdomni.in/banner/15072020/A2/E7/0C/9644F53BF7CC24CB92EAC8A190_1594809818811.jpg?output-format=webp" alt="" srcset="" />
               {/* <Image style={{}} src={SImageThree} /> */}
@@ -94,16 +94,16 @@ export default function Services() {
                 </Typography>
               </CardContent>
             </CardActionArea>
-            <CardActions>
+            {/* <CardActions>
               <Button size="small" color="primary">
                 Share
               </Button>
-            </CardActions>
+            </CardActions> */}
           </Card>
         </div>
 
         <div>
-          <Card sx={{ maxWidth: 345,minHeight:420 , backgroundColor:'#383636',color:'white'}}>
+          <Card sx={{ maxWidth: 345,minHeight:380 , backgroundColor:'#383636',color:'white'}}>
             <CardActionArea>
               <Image style={{height:'14rem'}} src={SImageFour} />
               <CardContent>
@@ -115,17 +115,17 @@ export default function Services() {
                 </Typography>
               </CardContent>
             </CardActionArea>
-            <CardActions>
+            {/* <CardActions>
               <Button size="small" color="primary">
                 Share
               </Button>
-            </CardActions>
+            </CardActions> */}
           </Card>
         </div>
 
         <div>
         
-          <Card sx={{ maxWidth: 345,minHeight:420 , backgroundColor:'#383636',color:'white'}}>
+          <Card sx={{ maxWidth: 345,minHeight:380 , backgroundColor:'#383636',color:'white'}}>
             <CardActionArea>
             
                 <Image style={{height:'14rem'}} src={SImageFive} />
@@ -135,21 +135,21 @@ export default function Services() {
                   Sports Ground
                 </Typography>
                 <Typography sx={{color:'white'}} variant="body2" color="text.secondary">
-                We make athletics track, Jogging track, tennis court, multi purpose ground,BasketBall ground ,foot ball ground, etc.
+                We make athletics track, Jogging track, tennis court, multi purpose ground,BasketBall ground, Foot ball ground, etc.
                 </Typography>
               </CardContent>
             </CardActionArea>
-            <CardActions>
+            {/* <CardActions>
               <Button size="small" color="primary">
                 Share
               </Button>
-            </CardActions>
+            </CardActions> */}
           </Card>
         </div>
 
         <div>
         
-          <Card sx={{ maxWidth: 345,minHeight:420 , backgroundColor:'#383636',color:'white'}}>
+          <Card sx={{ maxWidth: 345,minHeight:380 , backgroundColor:'#383636',color:'white'}}>
             <CardActionArea>
               <Image style={{height:'14rem'}} src={SImageSix} />
               <CardContent>
@@ -161,17 +161,17 @@ export default function Services() {
                 </Typography>
               </CardContent>
             </CardActionArea>
-            <CardActions>
+            {/* <CardActions>
               <Button size="small" color="primary">
                 Share
               </Button>
-            </CardActions>
+            </CardActions> */}
           </Card>
         </div>
 
         <div>
         
-          <Card sx={{ maxWidth: 345,minHeight:420 , backgroundColor:'#383636',color:'white'}}>
+          <Card sx={{ maxWidth: 345,minHeight:380 , backgroundColor:'#383636',color:'white'}}>
             <CardActionArea>
               <Image style={{height:'14rem'}} src={SImageSeven} />
               <CardContent>
@@ -183,17 +183,17 @@ export default function Services() {
                 </Typography>
               </CardContent>
             </CardActionArea>
-            <CardActions>
+            {/* <CardActions>
               <Button size="small" color="primary">
                 Share
               </Button>
-            </CardActions>
+            </CardActions> */}
           </Card>
         </div>
 
         <div>
         
-          <Card sx={{ maxWidth: 345,minHeight:420 , backgroundColor:'#383636',color:'white'}}>
+          <Card sx={{ maxWidth: 345,minHeight:380 , backgroundColor:'#383636',color:'white'}}>
             <CardActionArea>
               <Image style={{height:'14rem'}} src={SImageOne} />
               <CardContent>
@@ -205,17 +205,17 @@ export default function Services() {
                 </Typography>
               </CardContent>
             </CardActionArea>
-            <CardActions>
+            {/* <CardActions>
               <Button size="small" color="primary">
                 Share
               </Button>
-            </CardActions>
+            </CardActions> */}
           </Card>
         </div>
 
         <div>
         
-          <Card sx={{ maxWidth: 345,minHeight:420 , backgroundColor:'#383636',color:'white'}}>
+          <Card sx={{ maxWidth: 345,minHeight:380 , backgroundColor:'#383636',color:'white'}}>
             <CardActionArea>
               <Image style={{height:'14rem'}} src={SImageNine} />
               <CardContent>
@@ -227,11 +227,11 @@ export default function Services() {
                 </Typography>
               </CardContent>
             </CardActionArea>
-            <CardActions>
+            {/* <CardActions>
               <Button size="small" color="primary">
                 Share
               </Button>
-            </CardActions>
+            </CardActions> */}
           </Card>
         </div>
       </div>

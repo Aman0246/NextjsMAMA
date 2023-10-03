@@ -75,8 +75,6 @@ export default function MainPage({ Openmodel, setOpenmodel }) {
     alignItems: "center",
     position: "absolute",
     borderRadius: "50%",
-    // left: `${mousePosition.x - 500}px`,
-    // top: `${mousePosition.y - 300}px`,
   };
   const headingContainerStyle = {
     fontSize: "3.75rem",
@@ -117,7 +115,7 @@ export default function MainPage({ Openmodel, setOpenmodel }) {
     flexDirection: "column",
     justifyContent: "flex-end",
     alignItems: "center",
-    gap: "20px",
+    gap: "5rem",
     height: "30%",
   };
   const projectContainer = {
@@ -133,6 +131,7 @@ export default function MainPage({ Openmodel, setOpenmodel }) {
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
+    marginRight:'1rem'
   };
   const projectCompletedOne={
     display: "flex",
